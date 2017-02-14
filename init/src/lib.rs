@@ -1,5 +1,29 @@
 #![feature(macro_reexport)]
 
+//! Mark a function to run before main.
+//!
+//! `src/main.rs`
+//! ```rust
+//! extern crate init;
+//! use init::init;
+//!
+//! #[init]
+//! fn init() {
+//! }
+//!
+//! fn main() {
+//! }
+//! ```
+//!
+//! `build.rs`
+//! ```rust
+//! extern crate init;
+//!
+//! fn main() {
+//!     init::build();
+//! }
+//! ```
+
 extern crate gcc;
 
 #[macro_reexport(init)]
