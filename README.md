@@ -1,4 +1,5 @@
 # init
+![Rust](https://img.shields.io/badge/rust-nightly-red.svg)
 > Mark a function to run before main.
 
 ## Install
