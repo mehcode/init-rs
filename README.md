@@ -1,5 +1,7 @@
 # init
 ![Rust](https://img.shields.io/badge/rust-nightly-red.svg)
+[![Crates.io](https://img.shields.io/crates/d/init.svg)](https://crates.io/crates/init)
+[![Docs.rs](https://docs.rs/init/badge.svg)](https://docs.rs/init)
 > Mark a function to run before main.
 
 ## Install
