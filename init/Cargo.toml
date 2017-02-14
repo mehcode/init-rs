@@ -1,6 +1,6 @@
 [package]
 name = "init"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
 description = "Mark a function to run before main."
 homepage = "https://github.com/mehcode/init-rs"
