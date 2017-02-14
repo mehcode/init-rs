@@ -6,7 +6,7 @@ description = "Mark a function to run before main."
 homepage = "https://github.com/mehcode/init-rs"
 documentation = "https://docs.rs/init"
 repository = "https://github.com/mehcode/init-rs/tree/master/init"
-readme = "README.md"
+readme = "../README.md"
 keywords = ["init"]
 license = "MIT/Apache-2.0"
 
