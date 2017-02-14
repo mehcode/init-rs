@@ -3,6 +3,7 @@
 //! Mark a function to run before main.
 //!
 //! `src/main.rs`
+//!
 //! ```rust
 //! extern crate init;
 //! use init::init;
@@ -16,6 +17,7 @@
 //! ```
 //!
 //! `build.rs`
+//!
 //! ```rust
 //! extern crate init;
 //!
