@@ -1,0 +1,9 @@
+[package]
+name = "init"
+version = "0.1.0"
+authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
+
+[dependencies]
+gcc = "0.3"
+init_codegen = { path = "../init_codegen" }
+# init_codegen = "0.1.0"

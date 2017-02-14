@@ -1,0 +1,10 @@
+[package]
+name = "example"
+version = "0.1.0"
+authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
+
+[dependencies]
+init = { path = "../init" }
+
+[build-dependencies]
+init = { path = "../init" }

@@ -1,0 +1,11 @@
+[package]
+name = "init_codegen"
+version = "0.1.0"
+authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "0.3.12"
+syn = { version = "0.11", features = ["full"] }
