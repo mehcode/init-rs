@@ -7,5 +7,5 @@ members = [
 ]
 
 [replace]
-"init:0.1.1" = { path = "init" }
-"init_codegen:0.1.0" = { path = "init_codegen" }
+"init:0.2.0" = { path = "init" }
+"init_codegen:0.2.0" = { path = "init_codegen" }

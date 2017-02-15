@@ -1,6 +1,6 @@
 [package]
 name = "init_codegen"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
 description = "Procedural macro for Init."
 homepage = "https://github.com/mehcode/init-rs"

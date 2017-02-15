@@ -8,10 +8,10 @@
 
 ```toml
 [dependencies]
-init = "0.1"
+init = "0.2"
 
 [build-dependencies]
-init = "0.1"
+init = "0.2"
 ```
 
 ## Usage
