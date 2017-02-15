@@ -2,9 +2,10 @@
 members = [
     "init",
     "init_codegen",
-    "example",
+    "example-lib",
+    "example-bin",
 ]
 
-# [replace]
-# "init:0.1.0" = { path = "init" }
-# "init_codegen:0.1.0" = { path = "init_codegen" }
+[replace]
+"init:0.1.1" = { path = "init" }
+"init_codegen:0.1.0" = { path = "init_codegen" }

@@ -40,22 +40,21 @@ use std::env;
 pub fn build() {
     let out_dir = env::var("OUT_DIR").unwrap();
     let package_name = env::var("CARGO_PKG_NAME").unwrap().replace('-', "_");
-    let package_version = env::var("CARGO_PKG_VERSION").unwrap().replace('.', "_");
-    let spec = format!("{}_{}", package_name, package_version);
-    let c_abi_name = format!("_c_init_{}", spec);
-    let rust_abi_name = format!("_rust_init_{}", spec);
-    let c_lib_name = format!("lib_init_{}.a", spec);
-    let c_src_name = format!("init_{}.c", spec);
+    let c_abi_name = format!("_c_init_{}", package_name);
+    let rust_abi_name = format!("_rust_init_{}", package_name);
+    let c_lib_name = format!("lib_init_{}.a", package_name);
+    let c_src_name = format!("init_{}.c", package_name);
 
     let source = format!(r#"
         extern void {}();
         extern void _rust_init_example_lib_0_1_0();
 
-        __attribute__ ((constructor, externally_visible))
+        void {}() __attribute__((constructor));
+
         void {}() {{
             {}();
         }}
-    "#, rust_abi_name, c_abi_name, rust_abi_name);
+    "#, rust_abi_name, c_abi_name, c_abi_name, rust_abi_name);
 
     let dest_path = Path::new(&out_dir).join(c_src_name);
 
